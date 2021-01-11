@@ -2,3 +2,108 @@ body {
   padding: 2em;
   font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
 }
+
+.prime-rtl{
+  * {
+    text-align: right !important;
+  }
+  .p-calendar-w-btn {
+    .p-datepicker-trigger {
+      border-bottom-right-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+    }
+  }
+  .p-inputgroup-addon:last-child, 
+  .p-inputgroup button:last-child, 
+  .p-inputgroup input:last-child {
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+  .p-calendar-w-btn {
+    .p-inputtext {
+      border-bottom-right-radius: 3px !important;
+      border-top-right-radius: 3px !important;
+      border-bottom-left-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+    }
+  }
+  .pi-chevron-right:before {
+    content: "\e900";
+  }
+  .pi-chevron-left:before {
+    content: "\e901";
+  }
+  .p-field-checkbox > label, 
+  .p-field-radiobutton > label {
+    margin-right: 0.5rem;
+  }
+  .p-inputnumber-buttons-stacked .p-inputnumber-input,
+  .p-inputgroup-addon:first-child, 
+  .p-inputgroup button:first-child, 
+  .p-inputgroup input:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .p-inputgroup-addon {
+    border-right: 1px solid #ced4da;
+    border-left: 0;
+  }
+  .p-inputgroup-addon:last-child {
+      border-right: 0;
+      border-left: 1px solid #ced4da !important;
+  }
+  .p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-up {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-down {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-up {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-down {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .p-button-label {
+    text-align: center !important;
+  }
+  .pi-angle-right:before{
+    content: "\e931";
+  }
+  .pi-angle-left:before {
+    content: "\e932";
+  }
+  .pi-angle-double-right:before {
+    content: "\e92d";
+  }
+  .pi-angle-double-left:before {
+    content: "\e92e";
+  }
+  .p-paginator .p-dropdown .p-dropdown-label {
+    padding-right: 10px;
+  }
+}

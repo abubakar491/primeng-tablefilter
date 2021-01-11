@@ -30,6 +30,10 @@ import {InputNumberModule} from 'primeng/inputnumber';
 import {PasswordModule} from 'primeng/password';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import {ToggleButtonModule} from 'primeng/togglebutton';
+import { RippleModule } from 'primeng/ripple';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { MessagesModule } from 'primeng/messages';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
 
 
 
@@ -50,7 +54,18 @@ import { FormInputNumberComponent } from './form-input-number/form-input-number.
 import { FormMultiSelectComponent } from './form-multi-select/form-multi-select.component';
 import { FormRadioButtonComponent } from './form-radio-button/form-radio-button.component';
 import { FormToggleButtonComponent } from './form-toggle-button/form-toggle-button.component';
-import { FormPasswordComponent } from './form-password/form-password.component'
+import { FormPasswordComponent } from './form-password/form-password.component';
+import { ButtonComponent } from './button/button.component';
+import { ButtonSplitComponent } from './button-split/button-split.component';
+import { AccordianPanelComponent } from './accordian-panel/accordian-panel.component';
+import { OverlayConfirmDialogComponent } from './overlay-confirm-dialog/overlay-confirm-dialog.component';
+import { OverlayDialogComponent } from './overlay-dialog/overlay-dialog.component';
+import { OverlayTooltipComponent } from './overlay-tooltip/overlay-tooltip.component';
+import { MessageComponent } from './message/message.component';
+import { MessageToastComponent } from './message-toast/message-toast.component';
+import { AccordionModule } from 'primeng/accordion';
+import { TooltipModule } from 'primeng/tooltip';
+import {MessageModule} from 'primeng/message';
 
 const routes: Routes = [
   { path: 'data-tables', component: DataTablesComponent },
@@ -70,6 +85,14 @@ const routes: Routes = [
   { path: 'radio-button', component: FormRadioButtonComponent },
   { path: 'toggle-button', component: FormToggleButtonComponent },
   { path: 'password', component: FormPasswordComponent },
+  { path: 'button', component: ButtonComponent },
+  { path: 'button-split', component: ButtonSplitComponent },
+  { path: 'accordian-pannel', component: AccordianPanelComponent },
+  { path: 'overlay-confirm-dialog', component: OverlayConfirmDialogComponent },
+  { path: 'overlay-dialog', component: OverlayDialogComponent },
+  { path: 'overlay-tooltip', component: OverlayTooltipComponent },
+  { path: 'message', component: MessageComponent },
+  { path: 'message-toast', component: MessageToastComponent },
   { path: 'app', component: AppComponent },
   { path: '', redirectTo: '/data-tables', pathMatch: 'full'}
 ];
@@ -84,26 +107,33 @@ const routes: Routes = [
     CheckboxModule,
     CalendarModule,
     PasswordModule,
+    MessageModule,
+    SplitButtonModule,
 		SliderModule,
     DialogModule,
+    TooltipModule,
     RadioButtonModule,
 		MultiSelectModule,
 		ContextMenuModule,
 		DropdownModule,
-		ButtonModule,
+    ButtonModule,
+    AccordionModule,
     ToastModule,
+    RippleModule,
     InputSwitchModule,
     InputMaskModule,
     InputTextModule,
     ProgressBarModule,
     RatingModule,
+    MessagesModule,
+    ConfirmDialogModule,
     PickListModule,
     AutoCompleteModule,
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  declarations: [ AppComponent, DataTablesComponent, TableRowExpandComponent, TableEditComponent, DataPickListComponent, FormAutoCompleteComponent, FormCalendarComponent, FormCheckboxComponent, FormDropdownComponent, FormInputGroupComponent, FormInputMaskComponent, FormInputTextComponent, FormInputSwitchComponent, FormInputNumberComponent, FormMultiSelectComponent, FormRadioButtonComponent, FormToggleButtonComponent, FormPasswordComponent ],
+  declarations: [ AppComponent, DataTablesComponent, TableRowExpandComponent, TableEditComponent, DataPickListComponent, FormAutoCompleteComponent, FormCalendarComponent, FormCheckboxComponent, FormDropdownComponent, FormInputGroupComponent, FormInputMaskComponent, FormInputTextComponent, FormInputSwitchComponent, FormInputNumberComponent, FormMultiSelectComponent, FormRadioButtonComponent, FormToggleButtonComponent, FormPasswordComponent, ButtonComponent, ButtonSplitComponent, AccordianPanelComponent, OverlayConfirmDialogComponent, OverlayDialogComponent, OverlayTooltipComponent, MessageComponent, MessageToastComponent ],
   bootstrap:    [ AppComponent ],
   providers: [CustomerService, ProductService]
 })
