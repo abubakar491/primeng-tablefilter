@@ -27,7 +27,7 @@ export class OverlayConfirmDialogComponent {
 
     confirm1() {
         this.confirmationService.confirm({
-            message: 'Are you sure that you want to proceed?',
+            message: 'تدعم عروض الترويج؟',
             header: 'Confirmation',
             icon: 'pi pi-exclamation-triangle',
             accept: () => {
